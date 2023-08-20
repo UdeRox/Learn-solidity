@@ -20,7 +20,7 @@ contract Register {
         require(userSize < 25, "Only 25 Users can register!");
         users[userSize] = _newUser;
         uint256 userId = userSize++;
-        //emiting User Registerd event.
+        //emitting User Registerd event.
         emit UserRegisterd(_newUser, userId, msg.sender);
     }
 }
