@@ -14,7 +14,7 @@ contract FallBackFunctionTest is Test {
         vm.stopBroadcast();
         sender = makeAddr("sender");
     }
-Ø
+
     function testFallbackFunction() public payable {
         vm.prank(sender);
         vm.deal(sender, 10 ether);
