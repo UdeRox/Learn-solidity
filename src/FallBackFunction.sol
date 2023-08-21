@@ -8,7 +8,7 @@ contract FallBackFunction {
     fallback() external payable {
         emit Log("fallback", msg.sender, msg.value);
     }
-    //@Ødev Notice there is no "function" key workd infront of the recevie
+    //@dev Notice there is no "function" key workd infront of the recevie
     receive() external payable {
         emit Log("Recieve", msg.sender, msg.value);
     }
