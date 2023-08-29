@@ -3,4 +3,6 @@ This repository has been created for the purpose of my personal learning journey
 
 Explanation on medium article 
 
-Fallback and Receive - https://medium.com/p/7f557bb29866 
+## Articles on Medium 
+
+- [Fallback and Receive]([https://medium.com/p/7f557bb29866])
