@@ -3,8 +3,10 @@ This repository has been created for the purpose of my personal learning journey
 
 I have covered most of the concepts in Medium articles.  
 
-## Articles on Medium 
+## Articles on Medium and branch
 
-- [Fallback and Receive](https://medium.com/p/7f557bb29866)
+- [Fallback and Receive](https://medium.com/p/7f557bb29866)  ([git branch](https://github.com/UdeRox/Learn-solidity/tree/fallback-fucntions))
+- [Solidity Events and Logs](https://medium.com/p/47dbd0d93623) ([git branch](https://github.com/UdeRox/Learn-solidity/tree/events-in-solidity))
+- 
 
 
