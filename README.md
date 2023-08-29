@@ -3,5 +3,4 @@ This repository has been created for the purpose of my personal learning journey
 
 Explanation on medium article 
 
-Fallback and recieve function 
-[https://medium.com/p/7f557bb29866](https://blog.blockmagnates.com/mastering-fallback-and-receive-functions-in-solidity-7f557bb29866)https://blog.blockmagnates.com/mastering-fallback-and-receive-functions-in-solidity-7f557bb29866
+Fallback and Receive - https://medium.com/p/7f557bb29866 
