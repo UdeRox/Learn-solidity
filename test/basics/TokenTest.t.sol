@@ -16,19 +16,26 @@ contract TokenTest is Test {
         vm.stopBroadcast();
         // vm.prank(owner);
     }
-    
+
     function testOwenrCanMint() public {
         vm.prank(msg.sender);
-        token.mint(alice, 1 ether );
-        assertEq(token.s_balanceOf(alice), 1 ether );
+        token.mint(alice, 1 ether);
+        assertEq(token.s_balanceOf(alice), 1 ether);
     }
 
-    function testStorgeIndex () public {
-        bytes32 aliceBalanceSlot  = keccak256(abi.encodePacked(uint256(uint160(alice)), uint256(1)));
+    /**
+     * @dev for the inspection of memory slot, we can use forge command
+     * forge inspect Token storage --pretty
+     */
+    function testStorgeIndex() public {
+        bytes32 aliceBalanceSlot = keccak256(
+            abi.encodePacked(uint256(uint160(alice)), uint256(0))
+        );
         vm.prank(msg.sender);
-        token.mint(alice, 1 ether );
-        uint256 aliceBalance = uint256(vm.load(address(token), aliceBalanceSlot));
+        token.mint(alice, 1 ether);
+        uint256 aliceBalance = uint256(
+            vm.load(address(token), aliceBalanceSlot)
+        );
         assertEq(aliceBalance, token.s_balanceOf(alice));
-    
     }
 }
